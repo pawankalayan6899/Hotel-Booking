@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Resort Booking</title>
+    <meta name="description" content="Book a luxurious stay at our exclusive resort. Enjoy premium rooms, top-notch amenities, and unparalleled service.">
+    <meta name="keywords" content="luxury resort, hotel booking, deluxe rooms, vacation, spa, amenities">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo">Luxury Stay Resort</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>Welcome to Luxury Stay Resort</h1>
+            <p>Experience luxury like never before</p>
+        </section>
+
+        <section class="booking-form" aria-labelledby="booking-heading">
+            <h2 id="booking-heading">Book Your Stay</h2>
+            <form>
+                <div class="form-group">
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="standard">Standard Room</option>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="suite">Executive Suite</option>
+                        <option value="presidential">Presidential Suite</option>
+                    </select>
+                </div>
+
+                <button type="submit" aria-label="Check room availability">Check Availability</button>
+            </form>
+        </section>
+
+        <section class="featured-rooms" id="rooms">
+            <h2>Featured Rooms</h2>
+            <div class="room-grid">
+                <div class="room-card">
+                    <img src="Standard Room, ideal for solo travelers or couples.jpg" alt="Standard Room, ideal for solo travelers or couples">
+                    <h3>Standard Room</h3>
+                    <p>Perfect for solo travelers or couples</p>
+                    <p class="price">From INR 800/night</p>
+                </div>
+                <div class="room-card">
+                    <img src="Deluxe Room.jpg" alt="Deluxe Room, spacious room with premium amenities">
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious room with premium amenities</p>
+                    <p class="price">From INR 1500/night</p>
+                </div>
+                <div class="room-card">
+                    <img src="Executive Suite.webp" alt="Executive Suite with separate living area">
+                    <h3>Executive Suite</h3>
+                    <p>Luxury suite with separate living area</p>
+                    <p class="price">From INR 2500/night</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@luxstay.com">info@luxstay.com</a></p>
+                <p>Phone: <a href="tel:+9180731697069">+91 80731697069</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>123 Indra Street, Kammanahalli, Bangalore</p>
+                <p>Karnataka, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxury Stay Resort. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
